@@ -7,5 +7,6 @@ public class Main {
     public static void main(String[] args) {
 
         Person p = new Person("David");
-        BankAccount account = new BankAccount("INGB123124124",p);
+        BankAccount account = new BankAccount("INGB123124124", p);
+    }
 }
