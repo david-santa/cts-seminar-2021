@@ -5,7 +5,7 @@ public class BankAccount {
     private long balance;
     private Person accountHolder;
 
-    public BankAccount(String iban, String accountHolderName, Person person) {
+    public BankAccount(String iban, Person person) {
         this.iban = iban;
         this.accountHolder = person;
         this.balance = 0;

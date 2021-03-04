@@ -15,6 +15,10 @@ public class Person {
         this.salary = salary;
     }
 
+    public Person(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

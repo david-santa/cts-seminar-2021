@@ -1,15 +1,11 @@
 package ro.ase.csie.cts.seminar2;
 
+import ro.ase.csie.cts.seminar2.solid.BankAccount;
+import ro.ase.csie.cts.seminar2.solid.Person;
+
 public class Main {
     public static void main(String[] args) {
-        CalendarUtil cu = new CalendarUtil();
-        try {
-            System.out.println(cu.weekDay(3));
-            System.out.println(cu.weekDay2(3));
-            System.out.println(cu.weekDay3(7));
-            System.out.println(cu.weekDay4(2));
-        } catch (IncorrectDayException e) {
-            e.printStackTrace();
-        }
-    }
+
+        Person p = new Person("David");
+        BankAccount account = new BankAccount("INGB123124124",p);
 }
