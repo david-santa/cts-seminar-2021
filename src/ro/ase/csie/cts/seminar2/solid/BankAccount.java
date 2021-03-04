@@ -12,10 +12,12 @@ public class BankAccount {
     }
 
     public void withdraw(long amount){
+        System.out.println("Withdrawing " + amount + " from " + iban);
         balance -= amount;
     }
 
     public void deposit(long amount){
+        System.out.println("Adding " + amount + " to " + iban);
         balance += amount;
     }
 

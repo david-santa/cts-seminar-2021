@@ -8,5 +8,9 @@ public class Main {
 
         Person p = new Person("David");
         BankAccount account = new BankAccount("INGB123124124", p);
+        account.deposit(100);
+        account.withdraw(50);
+        account.withdraw(70);
+        System.out.println(account.getBalance());
     }
 }
