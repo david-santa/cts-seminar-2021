@@ -37,5 +37,11 @@ public class Main {
                 e.getMessage();
             }
         }
+
+        try {
+            b2.transfer(b1,20);
+        } catch (InsufficientFundsException e) {
+            e.printStackTrace();
+        }
     }
 }
