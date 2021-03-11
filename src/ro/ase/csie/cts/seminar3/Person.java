@@ -7,6 +7,14 @@ public class Person {
     private String address;
     private Date birthDate;
     private long salary;
+    private String email;
+    private NotificationType notificationType;
+    private String mobile;
+
+    public static enum NotificationType{
+        EMAIL,
+        SMS
+    }
 
     public Person(String name, String address, Date birthDate, long salary) {
         this.name = name;
@@ -49,5 +57,29 @@ public class Person {
 
     public void setSalary(long salary) {
         this.salary = salary;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public NotificationType getNotificationType() {
+        return notificationType;
+    }
+
+    public void setNotificationType(NotificationType notificationType) {
+        this.notificationType = notificationType;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 }
