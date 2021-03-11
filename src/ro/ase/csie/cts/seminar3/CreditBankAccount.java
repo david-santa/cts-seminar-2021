@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.seminar3;
 
-public class CreditBankAccount implements Account{
+public class CreditBankAccount implements Receivable{
 
     private long balance;
 
@@ -12,11 +12,6 @@ public class CreditBankAccount implements Account{
         this.iban = iban;
         this.accountHolder = accountHolder;
         this.balance = balance;
-    }
-
-    @Override
-    public void withdraw(long amount) throws InsufficientFundsException {
-        throw new UnsupportedOperationException("Cannot withdraw from this account");
     }
 
     @Override
