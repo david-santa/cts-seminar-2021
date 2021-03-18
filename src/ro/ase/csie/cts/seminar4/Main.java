@@ -11,11 +11,19 @@ public class Main {
     public static void main(String[] args) {
         NotificationService emailService = new EmailNotificationService();
         Person p3 = new Person("Van Damme");
+        p3.setAge(30);
         p3.setEmail("van@damme.com");
         p3.setMobile("+12312331");
+        Person child = new Person("Van Damme Jr");
+        child.setAge(11);
+        child.setEmail("van@damme.com");
+        child.setMobile("+12312331");
         BankAccount b3 = new CreditBankAccount(emailService, "BT123123123", p3,100);
         CreditBankAccount b = CreditBankAccount.createCreditBankAccountWithBalance(emailService,"ROBTRL123124124",p3,100);
         CreditBankAccount b1 = CreditBankAccount.createCreditBankAccount(emailService,"ROING12312312",p3);
+
+        p3.setNotificationType(Person.NotificationType.EMAIL);
+        child.setNotificationType(Person.NotificationType.SMS);
 
         BigInteger bi = new BigInteger(24,11, new Random());
         BigInteger bi2 = BigInteger.probablePrime(12,new Random());
@@ -35,5 +43,10 @@ public class Main {
 
         ElvisEnum elvisEnum = ElvisEnum.INSTANCE;
         elvisEnum.sing();
+
+
+        Bank bank = Bank.getInstance();
+        bank.openDebitAccount(p3);
+        bank.openDebitAccount(child);
     }
 }

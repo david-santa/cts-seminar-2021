@@ -6,6 +6,7 @@ public class Person {
     private String name;
     private String address;
     private Date birthDate;
+    private int age;
     private long salary;
     private String email;
     private NotificationType notificationType;
@@ -21,6 +22,14 @@ public class Person {
         this.address = address;
         this.birthDate = birthDate;
         this.salary = salary;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public Person(String name) {
