@@ -1,6 +1,7 @@
 package ro.ase.csie.cts.seminar4;
 
 import ro.ase.csie.cts.seminar4.banking.*;
+import ro.ase.csie.cts.seminar4.singleton.Elvis;
 
 import java.math.BigInteger;
 import java.util.Random;
@@ -24,5 +25,9 @@ public class Main {
         b.deposit(50);
 
         System.out.println(b.toString());
+
+        Elvis elvis = Elvis.theTrueElvis;
+        System.out.println("\n\n");
+        elvis.sing();
     }
 }
