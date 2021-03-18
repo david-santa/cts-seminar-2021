@@ -15,8 +15,12 @@ public class CreditBankAccount extends BankAccount implements Receivable {
         this.balance += amount;
     }
 
-    public static CreditBankAccount createCreditBankAccount(NotificationService notificationService, String iban, Person accountHolder, long balance){
+    public static CreditBankAccount createCreditBankAccountWithBalance(NotificationService notificationService, String iban, Person accountHolder, long balance){
         return new CreditBankAccount(notificationService,iban,accountHolder,balance);
+    }
+
+    public static CreditBankAccount createCreditBankAccount(NotificationService notificationService, String iban, Person accountHolder){
+        return new CreditBankAccount(notificationService,iban,accountHolder,0);
     }
 
     @Override
