@@ -1,0 +1,23 @@
+1. Variabilele si functiile nu urmeaza conventiile de nume pentru Java:camelCase. - Adhere to generally accepted naming conventions - Formatting
+2. Constructorul ar trebui sa fie mai sus in codul sursa pentru a fi mai usor vizibil
+3. Variabila vb nu face nimic in functia print - YAGNI, KISS
+4. Variabila temp nu este folosita in functia calculeaza - YAGNI, KISS
+5. Functia calculeaza ar trebui sa aibe un nume mai explicativ - Use Intention-Revealing Names - Meaningful Names
+6. Valoarea broker's fee ar trebui sa fie salvata intr-o variabila, altfel este magic number - Use Intention-Revealing Names - Meaningful Names
+7. Impartirea dintre zile activ si 365 ar trebui cast-uita la float
+8. Operatia de incrementare a comisionului total este greu de citit - Functions should be small! -Functions
+9. Nu este nevoie de else in constructor
+10. Nu este nevoie de else in setter
+11. Nu ar trebui folosita exceptia generica ci definita una particulara - Exceptions
+12. Dobanda principala ar trebui tinuta intr-o variabila separata pentru vizibilitate si pentru eliminarea comentariului - Explain yourself in code - Comments
+13. Variabilele ar trebui declarate cate una pe fiecare rand
+14. Pentru a asigura prezenta unei metode obligatorii ar trebui implementata o interfata
+15. Functia imprumut ar trebui sa se numeasca getValoareImprumut - Use Intention-Revealing Names - Meaningful Names
+16. Functia get face doua lucruri, afiseaza si returneaza, ar trebui doar sa returneze. Do one Thing - Functions
+17. Functia print este inutila - YAGNI
+18. Nu ar trebui sa fie nevoie de comentarii - Explain yourself in code - Comments
+19. Variailele trebuie sa fie private cu getter din motive de securitate - In public classes, use accessor methods, not public fields - Classes and Interfaces
+20. Ar trebui folosit un Enum in loc de int-uri constante - Use enums instead of int constants - Enums and Annotations
+21. Variabila tipCont trebuie sa fie enum - Use enums instead of int constants - Enums and Annotations
+22. Valoarea imprumutului si rata acestuia ar trebui stocate intr-o clasa separata si injectate in clasa cont - DIP
+23. Variabila zileActiv nu este initializata si va fi null
