@@ -5,6 +5,11 @@ public class DonaldDuck implements ActiuniDisney{
     public static final String DENUMIRE = "Donald Duck";
     int power;
 
+    @Override
+    public String getNume() {
+        return DENUMIRE;
+    }
+
     public int getPower() {
         return power;
     }
