@@ -1,0 +1,8 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern: Prin colaborarea cu o alta platforma de dezbateri online se doreste integrarea de argumente video in framework-ul existent fara modificarea clasei Argument
+Avantaje:
+- Respecta prncipiile Single Responsability si Open/Closed
+- Decupleaza clasa Argument de clasa Adaptor
+Dezavantaje:
+- Clasa este limitata la o singura adaptare
+- Creste complexitatea codului in cazul unei adaptari simple ca aceasta

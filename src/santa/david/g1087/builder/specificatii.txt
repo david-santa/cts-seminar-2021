@@ -1,0 +1,8 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern: Se cere sa se permita crearea de dezbateri fara a completa toate atributele, dar sa oblige completarea unora obligatorii
+Avantaje:
+- Utilizatorul poate alege ce atribute sa fie populate
+- Modularizeaza crearea obiectului ofernd lizibilitate si cod mai usor de folosit si inteles
+Dezavantaje:
+- Pot fi omise atribute la crearea obiectului
+- Necesita mai mult timp de implementare

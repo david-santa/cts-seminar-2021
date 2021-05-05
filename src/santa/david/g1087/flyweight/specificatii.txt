@@ -1,0 +1,8 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern: S-a observat faptul ca toate argumentele au in comun tipul argumentului(pro,contra sau neutru). Sa se controleze astfel obiectele folosind aceasta informatie
+Avantaje:
+- Reducerea memoriei ocupate
+- Reducerea numarului de obiecte
+Dezavantaje:
+- Necesita analiza detaliata suplimentara a claselor
+- In cazul acesta particular pentru doar 3 tipuri de categorii cu un singur atribut comun nu este chiar justificat

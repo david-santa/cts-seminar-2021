@@ -1,0 +1,8 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern: Mentinerea fisierelor de tip log printr-o unica clasa centralizata Logger
+Avantaje:
+- Centralizarea logurilor
+- Poate fi instantiat in mod "lazy"
+Dezavantaje:
+- Testarea unitara devine mai complicata.
+- Incalca principiul "single responsibility" deoarece clasa se ocupa atat de asigurarea unicitatii instantei cat si de actiunea de logging

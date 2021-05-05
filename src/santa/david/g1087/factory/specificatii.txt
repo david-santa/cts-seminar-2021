@@ -1,0 +1,9 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern: Este nevoie de crearea unor obiecte de tip Argument. Acestea pot fi de tip pro sau contra
+Avantaje:
+- Adauga un layer de abstractizare
+-Ofera un punct central de control
+-Ofera utilizatorului un mod mai structurat pentru a crea obiectele
+Dezavantaje:
+-Ingreuneaza adaugarea de noi tipuri de argumente
+-Face codul putin mai greu de citit in cazul acesta in care era mai lizibil un constructor

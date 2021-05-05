@@ -1,0 +1,8 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern:
+Avantaje:
+- Crearea rapida de obiecte
+- Loose coupling
+Dezavantaje:
+- Clonarea de obiecte complexe poate deveni dificila
+- Necesita suprascrierea functiei clone pentru deep copy

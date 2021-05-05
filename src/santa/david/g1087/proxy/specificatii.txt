@@ -1,0 +1,8 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern:
+Avantaje:
+- Implementare usoara
+- Adaugarea de noi featureuri fara modificarea clasei initiale
+Dezavantaje:
+- Poate duce la bottleneck
+- Exista delay intre utilizator si aplicatie din cauza unui pas intermediar

@@ -1,0 +1,8 @@
+Titlul temei de licenta: Platforma web pentru dezbateri online
+Descrierea problemei care trebuie rezolvata prin pattern: Se cere sa se poata adauga diferite atribute unui argument la momentul executiei
+Avantaje:
+- Ofera transparenta utilizatorului
+- Nu limiteaza numarul de decorari
+Dezavantaje:
+- Mentenanta dificila a obiectelor din pricina similaritatii
+- Conteaza ordinea decorarilor
