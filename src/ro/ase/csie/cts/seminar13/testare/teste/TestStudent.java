@@ -1,8 +1,9 @@
-package ro.ase.csie.cts.seminar13.testare.modele;
+package ro.ase.csie.cts.seminar13.testare.teste;
 
 import org.junit.*;
 import ro.ase.csie.cts.seminar13.testare.exceptii.ExceptieNume;
 import ro.ase.csie.cts.seminar13.testare.exceptii.ExceptieVarsta;
+import ro.ase.csie.cts.seminar13.testare.modele.Student;
 
 import java.util.ArrayList;
 
