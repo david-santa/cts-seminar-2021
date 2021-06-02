@@ -26,21 +26,21 @@ public class TestStudentAlteTeste {
         note = new ArrayList<>();
         nrNoteInitiale = 3;
         Random random = new Random();
-        for (int i = 0; i < nrNoteInitiale; i++){
+        for (int i = 0; i < nrNoteInitiale; i++) {
             note.add(random.nextInt(Student.MAX_NOTA) + 1);
         }
         numeInitial = "Gigel";
-        varstaInitiala = Student.MIN_VARSTA  + 1;
+        varstaInitiala = Student.MIN_VARSTA + 1;
 
         noteTestPerformanta = new ArrayList<>();
         int nrNote = 100000;
-        for (int i=0; i<nrNote; i++){
+        for (int i = 0; i < nrNote; i++) {
             noteTestPerformanta.add(Student.MAX_NOTA);
         }
     }
 
     @AfterClass
-    public static void tearDownAfterClass() throws Exception{
+    public static void tearDownAfterClass() throws Exception {
 
     }
 
@@ -94,7 +94,7 @@ public class TestStudentAlteTeste {
         student.setNote(note);
 
         int[] noteStudent = new int[student.getNrNote()];
-        for (int i = 0; i < student.getNrNote(); i++){
+        for (int i = 0; i < student.getNrNote(); i++) {
             noteStudent[i] = student.getNota(i);
         }
 
@@ -103,7 +103,7 @@ public class TestStudentAlteTeste {
         //testam daca modif starea obj extern nu afecteaza obj curent
         //shallow-copy
         int[] noteStudentDupaModificare = new int[student.getNrNote()];
-        for (int i = 0; i < student.getNrNote(); i++){
+        for (int i = 0; i < student.getNrNote(); i++) {
             noteStudentDupaModificare[i] = student.getNota(i);
         }
 
@@ -114,7 +114,7 @@ public class TestStudentAlteTeste {
     public void testPerformanceGetMedie() throws ExceptieNota {
         ArrayList<Integer> note = new ArrayList<>();
         int nrNote = 100000;
-        for (int i=0; i < nrNote; i++){
+        for (int i = 0; i < nrNote; i++) {
             note.add(Student.MAX_NOTA);
         }
         student.setNote(note);
@@ -125,21 +125,15 @@ public class TestStudentAlteTeste {
 
         long durataMinima = 10;  //100ms
         long durata = tFinal - tStart;
-        if (durata < durataMinima){
+        if (durata < durataMinima) {
             assertTrue(true);
-        }
-        else{
+        } else {
             fail("Testul a depasit durata minima");
         }
     }
 
     @Test(timeout = 10)
     public void testPerformanceGetMedieJUnit4() throws ExceptieNota {
-//        ArrayList<Integer> note = new ArrayList<>();
-//        int nrNote = 100000;
-//        for (int i=0; i < nrNote; i++){
-//            note.add(Student.MAX_NOTA);
-//        }
         student.setNote(noteTestPerformanta);
 
         student.getMedie();
@@ -150,7 +144,7 @@ public class TestStudentAlteTeste {
         ArrayList<Integer> note = new ArrayList<>();
         int nrNote = 10000;
         Random random = new Random();
-        for (int i=0; i < nrNote; i++){
+        for (int i = 0; i < nrNote; i++) {
             note.add(random.nextInt(Student.MAX_NOTA) + 1);
         }
         student.setNote(note);
@@ -159,8 +153,8 @@ public class TestStudentAlteTeste {
 
         //pentru ca nu putem determina val estimata
         //verificam relatia dintre minim si valorile initiale
-        for (int i=0; i< nrNote; i++){
-            if (minimCalculat > note.get(i)){
+        for (int i = 0; i < nrNote; i++) {
+            if (minimCalculat > note.get(i)) {
                 fail("Minimul calculat nu este corect");
             }
         }
@@ -172,7 +166,7 @@ public class TestStudentAlteTeste {
         ArrayList<Integer> note = new ArrayList<>();
         int nrNote = 10000;
         Random random = new Random();
-        for (int i=0; i < nrNote; i++){
+        for (int i = 0; i < nrNote; i++) {
             note.add(random.nextInt(Student.MAX_NOTA) + 1);
         }
         student.setNote(note);
@@ -183,24 +177,11 @@ public class TestStudentAlteTeste {
         assertEquals("Valorile calculate de cele 2 functii nu sunt identice", medieEstimata, medieCalculata, 0);
     }
 
-    public float getMedieVariantaInitiala(ArrayList<Integer> valori){
+    public float getMedieVariantaInitiala(ArrayList<Integer> valori) {
         float suma = 0;
-        for (int valoare : valori){
+        for (int valoare : valori) {
             suma += valoare;
         }
-        return suma/valori.size();
+        return suma / valori.size();
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
