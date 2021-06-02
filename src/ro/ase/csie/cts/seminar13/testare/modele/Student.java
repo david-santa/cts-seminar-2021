@@ -55,7 +55,6 @@ public class Student {
         this.note = note;
     }
 
-
     public int getNota(int index) {
         return this.note.get(index);
     }
